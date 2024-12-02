@@ -1,6 +1,7 @@
 const express  = require("express");
 const mongoose  = require("mongoose");
 const userRoutes = require("./routes/userRoutes");
+const listRoutes = require("./routes/listRoutes");
 
 const  app = express();
 const db = mongoose.connect("mongodb+srv://chethanaddetlapp:chethanDB@cluster0.fxuv6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -12,6 +13,7 @@ app.get("/",(req,res)=>{
 
 app.use(express.json());
 app.use("/user",userRoutes)
+app.use("/task",listRoutes)
 
 
 app.listen(PORT,()=>console.log(`Server is running on PORT : ${PORT}`))
