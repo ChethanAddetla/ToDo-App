@@ -26,7 +26,11 @@ const Navbar =()=>{
           <a className="nav-link active" aria-current="page" href="#">Log Out</a>
         </li>
         <li className="nav-item">
-            <img  className=" img-fluid user-png" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png"></img>
+        <a className="nav-link active" aria-current="page" href="#">
+        <img  className=" img-fluid user-png" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="/"></img>
+
+        </a>
+
         </li>
         
         
