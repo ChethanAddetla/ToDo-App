@@ -8,5 +8,7 @@
 .nav-bar-btn{
     background-color: orangered;
     border-radius: 10px;
+    color: white !important;
+    font-weight: bold;
 
 }
