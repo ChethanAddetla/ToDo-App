@@ -22,7 +22,6 @@ function App() {
         </Routes>
       </Router>
      {/* <Home></Home> */}
-     <About></About>
      <Footer></Footer>
     </div>
   )

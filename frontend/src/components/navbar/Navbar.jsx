@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { ImBook } from "react-icons/im";
 
@@ -15,22 +16,25 @@ const Navbar =()=>{
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mx-2">
         <li className="nav-item mx-1">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link className="nav-Link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item mx-1">
-          <Link className="nav-link active" aria-current="page" to="#">About Us</Link>
-        </li>
-        <li className="nav-item mx-1 my-1">
-          <Link className="nav-link active nav-bar-btn px-2" aria-current="page" to="#">Sign Up</Link>
-        </li>
-        <li className="nav-item mx-1 my-1">
-          <Link className="nav-link active nav-bar-btn px-2" aria-current="page" to="#">Sign In</Link>
-        </li>
-        <li className="nav-item mx-1 my-1">
-          <Link className="nav-link active nav-bar-btn px-2" aria-current="page" to="#">Log Out</Link>
+          <Link className="nav-Link active" aria-current="page" to="/about">About Us</Link>
         </li>
         <li className="nav-item mx-1">
-        <Link className="nav-link active" aria-current="page" to="#">
+          <Link className="nav-Link active" aria-current="page" to="/about">ToDo</Link>
+        </li>
+        <li className="nav-item mx-2 my-1">
+          <Link className="nav-Link active nav-bar-btn px-2" aria-current="page" to="#">Sign Up</Link>
+        </li>
+        <li className="nav-item mx-2 my-1">
+          <Link className="nav-Link active nav-bar-btn px-2" aria-current="page" to="#">Sign In</Link>
+        </li>
+        <li className="nav-item mx-2 my-1">
+          <Link className="nav-Link active nav-bar-btn px-2" aria-current="page" to="#">Log Out</Link>
+        </li>
+        <li className="nav-item mx-1">
+        <Link className="nav-Link active" aria-current="page" to="#">
         <img  className=" img-fluid user-png" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="/"></img>
 
         </Link>
